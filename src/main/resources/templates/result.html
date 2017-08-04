@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head lang="en" >
+    <meta  charset="UTF-8" />
+    <title>Your search result </title>
+</head>
+<body>
+<h1> Your search result </h1>
+
+<p th:text="'sku :' + ${newBook.sku}"></p>
+<p th:text="'title :' + ${newBook.title}"></p>
+<p th:text="'author :' + ${newBook.author}"></p>
+<p th:text="'description :' + ${newBook.description}"></p>
+<p th:text="'price price:' + ${newbook.price}"></p>
+<a href="/addBook">add book </a>
+</body>
+</html>
